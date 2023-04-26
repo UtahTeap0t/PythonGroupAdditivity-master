@@ -1,0 +1,435 @@
+patterns:
+    # Patterns centering on a close shell carbon
+    # First atom assumed to be the center
+-   center_name: 'C'
+    periph_name: 'C'
+    connectivity: 'fragment a{
+    C labeled c1
+    $? labeled a1 single bond to c1
+    $? labeled a2 single bond to c1
+    $? labeled a3 single bond to c1
+    $? labeled a4 single bond to c1}'
+-   center_name: 'C[d]'
+    periph_name: 'C[d]'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled c2 double bond to c1
+    $? labeled a2 single bond to c1
+    $? labeled a3 single bond to c1}'
+-   center_name: 'C[a]'
+    periph_name: 'C[a]'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled c2 double bond to c1
+    C? labeled c3 double bond to c1}'
+-   center_name: 'CO'
+    periph_name: 'CO'
+    connectivity: 'fragment a{
+    C labeled c1
+    O? labeled o1 double bond to c1
+    $? labeled a2 single bond to c1
+    $? labeled a3 single bond to c1}'
+-   center_name: 'CCO'
+    periph_name: 'CCO'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled c2 double bond to c1
+    O? labeled o1 double bond to c1}'
+-   center_name: 'C[t]'
+    periph_name: 'C[t]'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled o1 triple bond to c1
+    $? labeled a2 single bond to c1}'
+-   center_name: 'C[B]'
+    periph_name: 'C[B]'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled c2 aromatic bond to c1
+    C? labeled c3 aromatic bond to c1
+    C? labeled c4 aromatic bond to c3
+    C? labeled c5 aromatic bond to c4
+    C? labeled c6 aromatic bond to c5
+    ringbond c6 aromatic bond to c2
+    $? labeled a1 single bond to c1}'
+    #fused to furan ring
+-   center_name: 'C[B]'
+    periph_name: 'C[B]'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled c2 aromatic bond to c1
+    C? labeled c3 aromatic bond to c1
+    C? labeled c4 aromatic bond to c3
+    C? labeled c5 aromatic bond to c4
+    C? labeled c6 aromatic bond to c5
+    ringbond c6 aromatic bond to c2
+    O? labeled o1 aromatic bond to c1
+    C? labeled c7 aromatic bond to o1
+    C? labeled c8 aromatic bond to c7
+    ringbond c8 aromatic bond to c3}'
+-   center_name: 'C[BF]'
+    periph_name: 'C[BF]'
+    connectivity: 'fragment a{
+    C labeled c1
+    C? labeled c2 aromatic bond to c1
+    C? labeled c3 aromatic bond to c1
+    C? labeled c4 aromatic bond to c1
+    C? labeled c5 aromatic bond to c2
+    C? labeled c6 aromatic bond to c5
+    C? labeled c7 aromatic bond to c6
+    ringbond c7 aromatic bond to c3
+    C? labeled c8 aromatic bond to c3
+    C? labeled c9 aromatic bond to c8
+    C? labeled c10 aromatic bond to c9
+    ringbond c10 aromatic bond to c4}'
+    # furan ring 1
+-   center_name: 'C[d]'
+    periph_name: 'C[d]'
+    connectivity: 'fragment a{
+    C labeled c1
+    O? labeled o1 aromatic bond to c1
+    C? labeled c2 aromatic bond to c1
+    C? labeled c3 aromatic bond to c2
+    C? labeled c4 aromatic bond to c3
+    ringbond c4 aromatic bond to o1
+    $? labeled a1 single bond to c1}'
+    # furan ring 2
+-   center_name: 'C[d]'
+    periph_name: 'C[d]'
+    connectivity: 'fragment a{
+    C labeled c2
+    C? labeled c1 aromatic bond to c2
+    C? labeled c3 aromatic bond to c2
+    C? labeled c4 aromatic bond to c3
+    O? labeled o1 aromatic bond to c4
+    ringbond o1 aromatic bond to c1
+    $? labeled a1 single bond to c2}'
+
+    # Patterns centering on a open shell carbon
+-   center_name: 'C[.]'
+    periph_name: 'C[.]'
+    connectivity: 'fragment a{
+    C. labeled c1
+    $? labeled a1 single bond to c1
+    $? labeled a2 single bond to c1
+    $? labeled a3 single bond to c1}'
+-   center_name: 'C[d.]'
+    periph_name: 'C[d.]'
+    connectivity: 'fragment a{
+    C. labeled c1
+    C? labeled c2 double bond to c1
+    $? labeled a1 single bond to c1}'
+-   center_name: 'CO[.]'
+    periph_name: 'CO[.]'
+    connectivity: 'fragment a{
+    C. labeled c1
+    O? labeled o1 double bond to c1
+    $? labeled a1 single bond to c1}'
+-   center_name: 'C[t.]'
+    periph_name: 'C[t.]'
+    connectivity: 'fragment a{
+    C. labeled c1
+    C? labeled c1 triple bond to c1}'
+-   center_name: 'C[B.]'
+    periph_name: 'C[B.]'
+    connectivity: 'fragment a{
+    C. labeled c1
+    C? labeled c2 aromatic bond to c1
+    C? labeled c3 aromatic bond to c1
+    C? labeled c4 aromatic bond to c3
+    C? labeled c5 aromatic bond to c4
+    C? labeled c6 aromatic bond to c5
+    ringbond c6 aromatic bond to c2}'
+-   center_name: 'C[:]'
+    periph_name: 'C[:]'
+    connectivity: 'fragment a{
+    C: labeled c1
+    $? labeled a1 single bond to c1
+    $? labeled a2 single bond to c1}'
+-   center_name: 'C[d:]'
+    periph_name: 'C[d:]'
+    connectivity: 'fragment a{
+    C: labeled c1
+    C? labeled c2 double bond to c1}'
+-   center_name: 'C[:.]'
+    periph_name: 'C[:.]'
+    connectivity: 'fragment a{
+    C:. labeled c1
+    $? labeled a1 single bond to c1}'
+
+    # Patterns centering on a oxygen atom
+-   center_name: 'O'
+    periph_name: 'O'
+    connectivity: 'fragment a{
+    O labeled o1
+    $? labeled a1 single bond to o1
+    $? labeled a2 single bond to o1}'
+    # Furan O
+-   center_name: 'O'
+    periph_name: 'O'
+    connectivity: 'fragment a{
+    O labeled o1
+    C? labeled c1 aromatic bond to o1
+    C? labeled c2 aromatic bond to o1}'
+-   center_name: 'O[.]'
+    periph_name: 'O[.]'
+    connectivity: 'fragment a{
+    O. labeled o1
+    $? labeled a1 single bond to o1}'
+-   center_name: 'none'
+    periph_name: 'none'
+    connectivity: 'fragment a{
+    O labeled o1
+    $? labeled a1 double bond to o1}'
+
+# Patterns centering on a sulfur atom
+-   center_name: 'S'
+    periph_name: 'S'
+    connectivity: 'fragment a{
+    S labeled s1
+    $? labeled a1 single bond to s1
+    $? labeled a2 single bond to s1}'
+    # Thiophene S
+-   center_name: 'S'
+    periph_name: 'S'
+    connectivity: 'fragment a{
+    S labeled s1
+    C? labeled c1 aromatic bond to s1
+    C? labeled c2 aromatic bond to s1}'
+-   center_name: 'S[.]'
+    periph_name: 'S[.]'
+    connectivity: 'fragment a{
+    S. labeled s1
+    $? labeled a1 single bond to s1}'
+-   center_name: 'none'
+    periph_name: 'none'
+    connectivity: 'fragment a{
+    S labeled s1
+    $? labeled a1 double bond to s1}'
+
+    # Patterns centering on a nitrogen
+-   center_name: 'N'
+    periph_name: 'N'
+    connectivity: 'fragment a{
+        N labeled n1
+        $? labeled a1 single bond to n1
+        $? labeled a2 single bond to n1
+        $? labeled a3 single bond to n1}'
+-   center_name: 'N[d]'
+    periph_name: 'N[d]'
+    connectivity: 'fragment a{
+        N labeled n1
+        N? labeled n1 double bond to n1
+        $? labeled a2 single bond to n1}'
+-   center_name: 'N[a]'
+    periph_name: 'N[a]'
+    connectivity: 'fragment a{
+    N labeled n1
+    N? labeled n2 double bond to n1}'
+-   center_name: 'NO'
+    periph_name: 'NO'
+    connectivity: 'fragment a{
+    N labeled n1
+    O? labeled o1 double bond to n1
+    $? labeled a2 single bond to n1}'
+-   center_name: 'N[t]'
+    periph_name: 'N[t]'
+    connectivity: 'fragment a{
+    N labeled n1
+    N? labeled o1 triple bond to n1}'
+
+-   center_name: 'N[B]'
+    periph_name: 'N[B]'
+    connectivity: 'fragment a{
+    N labeled n1
+    N? labeled n2 aromatic bond to n1
+    N? labeled n3 aromatic bond to n1
+    N? labeled n4 aromatic bond to n3
+    N? labeled n5 aromatic bond to n4
+    N? labeled n6 aromatic bond to n5
+    ringbond n6 aromatic bond to n2
+    $? labeled a1 single bond to n1}'
+    #fused to furan ring
+-   center_name: 'N[B]'
+    periph_name: 'N[B]'
+    connectivity: 'fragment a{
+    N labeled n1
+    N? labeled n2 aromatic bond to n1
+    N? labeled n3 aromatic bond to n1
+    N? labeled n4 aromatic bond to n3
+    N? labeled n5 aromatic bond to n4
+    N? labeled n6 aromatic bond to n5
+    ringbond n6 aromatic bond to n2
+    O? labeled o1 aromatic bond to n1
+    N? labeled n7 aromatic bond to o1
+    N? labeled n8 aromatic bond to n7
+    ringbond n8 aromatic bond to n3}'
+-   center_name: 'N[BF]'
+    periph_name: 'N[BF]'
+    connectivity: 'fragment a{
+    N labeled n1
+    N? labeled n2 aromatic bond to n1
+    N? labeled n3 aromatic bond to n1
+    N? labeled n4 aromatic bond to n1
+    N? labeled n5 aromatic bond to n2
+    N? labeled n6 aromatic bond to n5
+    N? labeled n7 aromatic bond to n6
+    ringbond n7 aromatic bond to n3
+    N? labeled n8 aromatic bond to n3
+    N? labeled n9 aromatic bond to n8
+    N? labeled n10 aromatic bond to n9
+    ringbond n10 aromatic bond to n4}'
+    # furan ring 1
+-   center_name: 'N[d]'
+    periph_name: 'N[d]'
+    connectivity: 'fragment a{
+    N labeled n1
+    O? labeled o1 aromatic bond to n1
+    N? labeled n2 aromatic bond to n1
+    N? labeled n3 aromatic bond to n2
+    N? labeled n4 aromatic bond to n3
+    ringbond n4 aromatic bond to o1
+    $? labeled a1 single bond to n1}'
+    # furan ring 2
+-   center_name: 'N[d]'
+    periph_name: 'N[d]'
+    connectivity: 'fragment a{
+    N labeled n2
+    N? labeled n1 aromatic bond to n2
+    N? labeled n3 aromatic bond to n2
+    N? labeled n4 aromatic bond to n3
+    O? labeled o1 aromatic bond to n4
+    ringbond o1 aromatic bond to n1
+    $? labeled a1 single bond to n2}'
+
+-   center_name: 'N[.]'
+    periph_name: 'N[.]'
+    connectivity: 'fragment a{
+    N. labeled n1
+    $? labeled a1 single bond to n1}'
+-   center_name: 'none'
+    periph_name: 'none'
+    connectivity: 'fragment a{
+    N labeled n1
+    $? labeled a1 double bond to n1}'
+
+# Patterns centering on a phosphorus
+-   center_name: 'P'
+    periph_name: 'P'
+    connectivity: 'fragment a{
+        P labeled p1
+        $? labeled a1 single bond to p1
+        $? labeled a2 single bond to p1
+        $? labeled a3 single bond to p1}'
+-   center_name: 'P[d]'
+    periph_name: 'P[d]'
+    connectivity: 'fragment a{
+        P labeled p1
+        P? labeled p1 double bond to p1
+        $? labeled a2 single bond to p1
+        $? labeled a3 single bond to p1}'
+-   center_name: 'P[a]'
+    periph_name: 'P[a]'
+    connectivity: 'fragment a{
+    P labeled p1
+    P? labeled p2 double bond to p1
+    C? labeled p3 single bond to p1}'
+-   center_name: 'PO'
+    periph_name: 'PO'
+    connectivity: 'fragment a{
+    P labeled p1
+    O? labeled o1 single bond to p1
+    $? labeled a2 single bond to p1
+    $? labeled a3 single bond to p1
+    $? labeled a4 single bond to p1}'
+-   center_name: 'P[t]'
+    periph_name: 'P[t]'
+    connectivity: 'fragment a{
+    P labeled p1
+    P? labeled o1 triple bond to p1}'
+-   center_name: 'P[.]'
+    periph_name: 'P[.]'
+    connectivity: 'fragment a{
+    P. labeled p1
+    $? labeled a1 single bond to p1}'
+-   center_name: 'P[:]'
+    periph_name: 'P[:]'
+    connectivity: 'fragment a{
+    P: labeled p1
+    $? labeled a1 single bond to p1
+    $? labeled a2 single bond to p1}'
+-   center_name: 'P[d:]'
+    periph_name: 'P[d:]'
+    connectivity: 'fragment a{
+    P: labeled p1
+    P? labeled p2 double bond to p1}'
+-   center_name: 'P[:.]'
+    periph_name: 'P[:.]'
+    connectivity: 'fragment a{
+    P:. labeled p1
+    $? labeled a1 single bond to p1}'
+
+-   center_name: 'none'
+    periph_name: 'none'
+    connectivity: 'fragment a{
+    P labeled p1
+    $? labeled a1 double bond to p1}'
+
+    # Other patterns
+-   center_name: 'none'
+    periph_name: 'H'
+    connectivity: 'fragment a{
+    H labeled h1 {connected to =0 H}
+    $? labeled a1 single bond to h1}'
+    # fluorine
+-   center_name: 'F'
+    periph_name: 'F'
+    connectivity: 'fragment a{
+    F labeled f1
+    $? labeled a1 single bond to f1}'
+-   center_name: 'I'
+    periph_name: 'I'
+    connectivity: 'fragment a{
+    I labeled i1
+    $? labeled a1 single bond to i1}'
+-   center_name: 'FP'
+    periph_name: 'FP'
+    connectivity: 'fragment a{
+    F labeled f1
+    P? labeled p1 single bond to f1}'
+
+    # Unique carbon group patterns
+-   center_name: 'CO2'
+    periph_name: 'CO2'
+    connectivity: 'fragment a{
+    C labeled c1
+    O? labeled o1 double bond to c1
+    O? labeled o2 double bond to c1}'
+-   center_name: 'CC'
+    periph_name: 'none'
+    connectivity: 'fragment a{
+    C? labeled c1
+    C? labeled c2 quadruple bond to c1}'
+-   center_name: 'CO:'
+    periph_name: 'CO:'
+    connectivity: 'fragment a{
+    C: labeled c1
+    O? labeled o1 double bond to c1}'
+-   center_name: 'H2noremap'
+    periph_name: 'none'
+    connectivity: 'fragment a{
+    H labeled h1
+    H labeled h2 single bond to h1}'
+-   center_name: 'O'
+    periph_name: 'O'
+    connectivity: 'fragment a{
+    O: labeled o1}'
+-   center_name: 'C'
+    periph_name: 'C'
+    connectivity: 'fragment a{
+    C? labeled c1 {has 4 radical electrons}}'
+-   center_name: 'H'
+    periph_name: 'H'
+    connectivity: 'fragment a{
+    H. labeled h1}'
+
